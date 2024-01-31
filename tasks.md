@@ -20,5 +20,3 @@
 ## books Schema
 
 ## add Schema to controllers
-
-## add users, employees
