@@ -1,29 +1,24 @@
-## [] List all present dbs
+## ODM vs ORM
 
-## []Create a Db _Library_
+## Basic Server
 
-## [] List all present collections
+- server
+- router
+- controller (addSingleBook, getAllBooks, getSingleBook, updateSingleBook, deleteSingleBook)
 
-## [] Create collections : _books | users | employees | mandarinen_
+## Add mongoose
 
-## [] List all present collections
+- installation
 
-## [] Delete the collection _mandarinen_
+## Connection with mongoDbAtlas
 
-## [] List all present collections
+- connection string
+- connect function
 
----
+## Schema Design Principles
 
-## [] Insert some documents from a given json (one by one and many at once)
+## books Schema
 
-## [] List all documents
+## add Schema to controllers
 
-## [] List some documents
-
-## [] List one document
-
----
-
-## [] Delete certain documents (one by one and many at once)
-
-## [] Update all documents, certain documents and one document
+## add users, employees
