@@ -14,8 +14,7 @@ app.use(cors());
 app.use('/books', booksRouter);
 app.use('/users', userRouter);
 
-const dbUrl =
-  'mongodb+srv://albert:NtwisvjR2WYHKtEU@cluster0.vqwtvba.mongodb.net/?retryWrites=true&w=majority';
+const dbUrl = process.env.DB_URL;
 
 const connectToDb = async () => {
   try {
