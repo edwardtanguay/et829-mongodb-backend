@@ -53,3 +53,12 @@ export const deleteSingleBook = async (req, res) => {
     handleError(res, e);
   }
 };
+
+export const deleteAllBooks = async (req, res) => {
+  try {
+    const books = await Book.deleteMany();
+    res.status(200).json(books);
+  } catch (e) {
+    handleError(res, e);
+  }
+};

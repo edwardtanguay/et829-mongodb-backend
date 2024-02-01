@@ -6,11 +6,16 @@ import {
   getSingleBook,
   updateSingleBook,
   deleteSingleBook,
+  deleteAllBooks,
 } from '../controllers/bookController.js';
 
 export const booksRouter = express.Router();
 
-booksRouter.route('/').post(addSingleBook).get(getAllBooks);
+booksRouter
+  .route('/')
+  .post(addSingleBook)
+  .get(getAllBooks)
+  .delete(deleteAllBooks);
 booksRouter
   .route('/:id')
   .get(getSingleBook)

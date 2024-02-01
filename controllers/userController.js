@@ -61,3 +61,12 @@ export const deleteSingleUser = async (req, res) => {
     handleError(res, e);
   }
 };
+
+export const deleteAllUsers = async (req, res) => {
+  try {
+    const users = await User.deleteMany();
+    res.status(200).json(users);
+  } catch (e) {
+    handleError(res, e);
+  }
+};
