@@ -1,8 +1,10 @@
 import express from 'express';
 import mongoose from 'mongoose';
-import { booksRouter } from './router.js';
+import { booksRouter } from './routers/bookRouter.js';
 const app = express();
 const port = 7575;
+
+app.use(express.json());
 
 app.use('/books', booksRouter);
 

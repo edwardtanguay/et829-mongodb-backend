@@ -1,4 +1,4 @@
-import { Book } from './schema.js';
+import { Book } from '../schemas/bookSchema.js';
 
 const handleError = (res, e) => {
   return res.status(500).json(e);

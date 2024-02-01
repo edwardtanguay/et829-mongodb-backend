@@ -12,8 +12,8 @@
 
 ## Connection with mongoDbAtlas
 
-- connection string
-- connect function
+* - connection string
+* - connect function
 
 * ## Schema Design Principles
 
