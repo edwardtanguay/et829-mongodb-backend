@@ -8,8 +8,6 @@
     "server" : "nodemon main.js"
   },
   "keywords": [],
-  "author": "albertleipzig <albertclemvill@gmail.com>",
-  "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.1",

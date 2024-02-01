@@ -1,0 +1,39 @@
+@url = http://localhost:7575
+
+
+### GET BOOKS
+GET {{url}}/books
+	
+### GET USERS
+GET {{url}}/users
+	
+### ADD A USER 
+POST {{url}}/users
+content-type: application/json
+	
+{
+	"firstName": "Tom",
+	"lastName": "Morgan",
+	"mobile": 30151923190,
+	"email": "tom.morgan@htl.com",
+	"address" : {
+		"street": "Holework Street",
+		"city": "Birmingham",
+		"zipCode": 31239,
+		"state": "Northingham"
+	}
+}
+
+### ADD A BOOK
+POST {{url}}/books
+content-type: application/json
+	
+{
+	"title": "Book 003",
+	"authors": [
+		"John Granger",
+		"Jines Hooplaton"
+	],
+	"pages": 812,
+	"available": true
+}
