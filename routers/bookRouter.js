@@ -6,7 +6,7 @@ import {
   getSingleBook,
   updateSingleBook,
   deleteSingleBook,
-} from './controller.js';
+} from '../controllers/bookController.js';
 
 export const booksRouter = express.Router();
 

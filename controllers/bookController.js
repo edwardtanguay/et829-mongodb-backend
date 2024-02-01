@@ -1,8 +1,5 @@
-import { Book } from './schema.js';
-
-const handleError = (res, e) => {
-  return res.status(500).json(e);
-};
+import { Book } from '../schemas/bookSchema.js';
+import { handleError } from '../utils/handleError.js';
 
 export const addSingleBook = async (req, res) => {
   try {

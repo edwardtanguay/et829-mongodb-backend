@@ -1,10 +1,18 @@
 import express from 'express';
 import mongoose from 'mongoose';
-import { booksRouter } from './router.js';
+import cors from 'cors';
+import dotenv from 'dotenv';
+dotenv.config();
+import { booksRouter } from './routers/bookRouter.js';
+import { userRouter } from './routers/userRouter.js';
 const app = express();
 const port = 7575;
 
+app.use(express.json());
+app.use(cors());
+
 app.use('/books', booksRouter);
+app.use('/users', userRouter);
 
 const dbUrl =
   'mongodb+srv://albert:NtwisvjR2WYHKtEU@cluster0.vqwtvba.mongodb.net/?retryWrites=true&w=majority';
